@@ -1,3 +1,8 @@
+@font-face{
+  font-family: ManifoldDSA-Regular;
+  src: url('ManifoldDSA-Regular.woff'), url('ManifoldDSA-Regular.woff') format('woff');
+}
+
 body {
   font-family: "ManifoldDSA-Regular";
   margin: 5% 20% 5% 20%;
