@@ -1,0 +1,48 @@
+body {
+  font-family: "ManifoldDSA-Regular";
+  margin: 5% 20% 5% 20%;
+}
+
+header {
+  margin-bottom: 10%;
+}
+
+h1, .accent {
+  color: #ec1f27;
+}
+
+.accent {
+  font-weight: bold;
+}
+
+a {
+  font-weight: bold;
+}
+
+.resolution {
+  color: black;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover, a:visited{
+  color: #ec1f27;
+}
+
+footer {
+  margin-top: 10%;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer span {
+  display: inline-block;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    margin: 5%;
+  }
+}
