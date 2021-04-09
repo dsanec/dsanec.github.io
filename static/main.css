@@ -1,10 +1,10 @@
 @font-face{
-  font-family: ManifoldDSA-Regular;
+  font-family: ManifoldDSA;
   src: url('ManifoldDSA-Regular.woff'), url('ManifoldDSA-Regular.woff') format('woff');
 }
 
 body {
-  font-family: "ManifoldDSA-Regular";
+  font: 16px "ManifoldDSA-Regular", Helvetica, sans-serif;
   margin: 5% 20% 5% 20%;
 }
 
@@ -20,7 +20,7 @@ h1, .accent {
   font-weight: bold;
 }
 
-a {
+a, #count {
   font-weight: bold;
 }
 
@@ -38,7 +38,6 @@ a:hover, a:visited{
 
 footer {
   margin-top: 10%;
-  font-size: 14px;
   text-align: center;
 }
 

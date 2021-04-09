@@ -1,10 +1,16 @@
+<!DOCTYPE html>
 <html>
 <head>
+<script src="https://d3js.org/d3.v6.min.js"></script>
 <link rel="stylesheet" href="static/main.css">
 </head>
 <body>
 <header>
-  This resolution requires 100 signatures to be considered by convention delegates.<br> <a href="https://docs.google.com/forms/d/1w6wPrq3Fe8OQhe-girIFphcackbGnClTfCOS6ZOKXZM/edit">Please sign your name through this form.</a>
+  <p>This resolution requires 100 signatures to be considered by convention delegates.
+  <br>
+  <a href="https://docs.google.com/forms/d/1w6wPrq3Fe8OQhe-girIFphcackbGnClTfCOS6ZOKXZM/edit">Please sign your name through this form.</a>
+  <p>
+  <p><span id="count"></span> DSA members have signed on so far!</p>
 </header>
 
 <h1>Toward a Mass Party in the United States (Electoral Priority)</h1>
@@ -75,6 +81,13 @@
 <p>
 <span class="accent resolution">Resolved</span> that DSA commits to devoting the time of two full-time organizers on national staff and to substantial resources over the next two years to build DSA&#8217;s independent socialist electoral infrastructure at the national level and in as many chapters as possible.
 </p>
+<script>
+  Promise.all([d3.tsv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSrL4_JnD9XF4kaSblXxkzWCnx-9O9j7MOuEWl4xxcoMjJb_Q7gyLEL9Wfan2nI3kL5skryWsE2MArI/pub?gid=0&single=true&output=tsv")])
+  .then(([count]) => {
+    console.log(count[0])
+    d3.select("#count").html(count[0].Count);
+  })
+</script>
 <footer>
   <p>
     <span><a href="https://electoral.dsausa.org">DSA NEC</a>
