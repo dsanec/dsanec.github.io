@@ -1,10 +1,16 @@
 @font-face{
   font-family: ManifoldDSA;
-  src: url('ManifoldDSA-Regular.woff'), url('ManifoldDSA-Regular.woff') format('woff');
+  src: url('ManifoldDSA-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: ManifoldDSA;
+  src: url(ManifoldDSA-Bold.woff) format('woff');
+  font-weight: bold;
 }
 
 body {
-  font: 16px "ManifoldDSA-Regular", Helvetica, sans-serif;
+  font: 16px "ManifoldDSA", Helvetica, sans-serif;
   margin: 5% 20% 5% 20%;
 }
 
